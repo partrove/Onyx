@@ -28,6 +28,15 @@
 	{{ $style := resources.Get "css/main.css" | fingerprint }}
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ $style.Permalink }}" />
 
+	<!-- Google analytics -->
+	{{ if .Site.Config.Services.GoogleAnalytics.ID }}
+    {{ template "_internal/google_analytics.html" . }}
+    {{ end }}
+	<!-- Seline analytics -->
+	{{ if isset .Site.Params.Seline "token" }}
+	<script data-token="{{ .Site.Params.Seline.Token }}" src="https://cdn.seline.com/seline.js" async></script>
+	{{ end }}
+
 	<!-- Mathjax support -->
 	{{- if .Site.Params.mathjax | default false -}}
 		<script type="text/javascript"

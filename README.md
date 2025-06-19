@@ -46,6 +46,8 @@ theme = 'Onyx'
 
 [params]
   useCDN = true
+  [params.seline]
+    token = "xxxxxxxxxxxxxxx"
 [[params.social]]
 name = "GitHub"
 icon = "github"
@@ -54,6 +56,10 @@ url = "https://github.com/partrove/Onyx"
 name = "X"
 icon = "x"
 url = "https://x.com/partrove"
+
+# [services]
+#   [services.googleAnalytics]
+#     ID = "G-xxxxxxxxxx"
 ```
 
 ## Screenshot
