@@ -55,3 +55,7 @@ name = "X"
 icon = "x"
 url = "https://x.com/partrove"
 ```
+
+## Screenshot
+
+![screenshot](images/screenshot.png)
